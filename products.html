@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css">
+  <title>js ecom website</title>
+</head>
+<body>
+     <header class="section-navbar">
+      <section class="top_txt">
+        <div class="head container">
+          <div class="head_txt">
+            <p>Free shipping, 30-day return or refund gurantee</p>
+          </div>
+          <div class="sing_in_up">
+            <a href="#">SIGN IN </a>
+            <a href="#">SIGN UP</a>
+          </div>
+        </div>
+      </section>
+      <div class="container">
+        <div class="navbar-brand">
+          <a href="index.html">
+            <img src="./public/images/logo.png"
+             alt="thapa eCommerce logo"
+             class="logo"
+             width="80%"
+             height="auto"
+             />
+          </a>
+        </div>
+
+
+        <nav class="navbar">
+           <ul>
+            <li class="nav-item">
+              <a href="/" class="nav-link">HOME</a>
+            </li>
+            <li class="nav-item">
+              <a href="about.html" class="nav-link">ABOUT</a>
+            </li>
+            <li class="nav-item">
+              <a href="products.html" class="nav-link">PRODUCTS</a>
+            </li>
+            <li class="nav-item">
+              <a href="contact.html" class="nav-link">CONTACT</a>
+            </li>
+            <li class="nav-item">
+              <a
+               href="addToCart.html"
+               class="nav-link add-to-cart-button"
+                id="cartValue">
+                <i class="fa-solid fa-cart-plus"> 0 </i>
+              </a>
+            </li>
+           </ul>
+        </nav>
+      </div>
+     </header>
+      <!-- ========== Start Extra Product Section Section ========== -->
+      <section class="section-extra-product">
+        <div class="container grid grid-three--cols">
+           <div class="div-extra grid grid-two--cols">
+            <div class="extra-text">
+              <p>new year sale</p>
+              <h3>get and extra 50% off</h3>
+              <a href="#">Shop now</a>
+            </div>
+            <div class="extra-img extra-laptop">
+               <img src="./public/images/engine.png" alt="">
+            </div>
+           </div>
+           <div class="div-extra grid grid-two--cols">
+            <div class="extra-text">
+              <p>new year sale </p>
+              <h3>40% discount on parts</h3>
+              <a href="#">Shop now</a>
+            </div>
+            <div class="extra-img">
+              <img src="./public/images/sweel.png" alt="">
+            </div>
+           </div>
+           <div class="div-extra grid grid-two--cols">
+             <div class="extra-text">
+               <p>new year sale</p>
+               <h3>get and extra 50% off</h3>
+               <a href="#">Shop now</a>
+             </div>       
+             <div class="extra-img">
+              <img src="./public/images/kit.png" alt="">
+             </div>
+           </div>
+        </div>
+      </section>
+      <!-- ========== End Extra Product Section Section ========== -->
+      
+      <!-- ========== Start policy Section ========== -->      
+      <section class="section-policy">
+        <div class="container grid grid-four--cols">
+          <div class="div-policy">
+            <div class="icons">
+              <i class="fa-solid fa-globe"></i>
+            </div>
+            <div class="div-policy-text">
+              <p>worldwide shipping</p>
+              <p>order above $200</p>
+            </div>
+          </div>
+
+          <div class="div-policy">
+            <div class="icons">
+              <i class="fa-solid fa-person-walking-arrow-loop-left"></i>
+            </div>
+            <div class="div-policy-text">
+               <p>Easy 30 Day Returns</p>
+               <p>Back Returns in 7 days</p>
+            </div>
+          </div>
+
+          <div class="div-policy">
+            <div class="icons">
+              <i class="fa-solid fa-dollar-sign"></i>
+            </div>
+            <div class="div-policy-text">
+              <p>money back guarantee</p>
+              <p>guarantee with in 30 days</p>
+            </div>
+          </div>
+
+          <div class="div-policy">
+            <div class="icons">
+              <i class="fa-sharp fa-solid fa-phone-volume"></i>
+            </div>
+            <div class="div-policy-text">
+              <p>Easy Online Support</p>
+              <p>24/7 Any time support</p>
+            </div>
+          </div>
+        </div>
+      </section>
+  <!-- ========== End policy Section ========== -->
+
+  <!-- ========== Start our products section Section ========== -->
+     <section class="section-products container">
+        <div>
+          <h2 class="section-common--heading">CHECKOUT BENTLEY STORE</h2>
+        </div>
+ 
+        <section class="container">
+           <div id="productContainer"></div>
+        </section>
+
+     </section>
+
+     <!-- ========== Start product template Section ========== -->
+       <template id="productTemplate">
+        <div class="cards" id="cardValue">
+          <article class="information [card]" >
+            <span class="category"></span>
+            <div class="imageContainer">
+              <img class="productImage" src="" alt="">
+            </div>
+            <h2 class="productName"></h2>
+            <div class="productRating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+             <i class="fa-solid fa-star"></i>
+            </div>
+
+            <p class="productDescription"></p>
+            <div class="productPriceElement">
+              <p class="productPrice"></p>
+              <p class="productActualPrice"></p>
+            </div>
+
+            <div class="productStockElement">
+              <p class="productProperty">Total stock Available</p>
+              <p class="productStock"></p>
+            </div>
+
+            <div class="productOuantityElement">
+              <p class="productProperty">Quantity(pieces)</p>
+              <div class="stockElement">
+                <button class="cartIncrement">+</button>
+                <p class="productQuantity">1</p>
+                <button class="cartDecrement">-</button>
+              </div>
+            </div>
+            <button class="add-to-cart-button">
+              <i class="fa-solid fa-cart-shopping"></i> Add to Cart
+            </button>
+          </article>
+        </div>
+        </template>
+
+     <!-- ========== End product template Section ========== -->
+
+  <!-- ========== End our products section Section ========== -->
+    <!-- ========== Start footer Section ========== -->
+     <footer class="section-footer">
+       <div class="footer-container container">
+          <div class="content_1">
+            <img src="./public/images/logo.png" alt="logo">
+            <p>
+              Welcome to BENTLEY eComStore, your ultimate destination for cutting-edge gadgets!
+            </p>
+            <img src="./public/images/kit.png" alt="logo">
+          </div>
+          <div class="content_2">
+            <h4>SHOPPING</h4>
+            <a href="#">accessories</a>
+            <a href="#">parts</a>
+            <a href="#">Sales & Discount</a>
+            <a href="#">Engine parts</a>
+          </div>
+          <div class="content_3">
+            <h4>Experience</h4>
+            <a href="./contact.html">Contact Us</a>
+            <a href="#" target="_blank">Payment Method</a>
+            <a href="#" target="_blank">Delivery</a>
+            <a href="#" target="_blank">Return and Exchange</a>
+          </div>
+          <div class="content_4">
+            <h4>NEWSLETTER</h4>
+            <p>Be the first to know about new <br /> arrivals, sales & promos!</p>
+            <div class="f-mail">
+              <input type="email" placeholder="your email">
+              <i class="bx bx-envelope"></i>
+            </div>
+            <hr />
+          </div>
+       </div>
+       <div class="f-design">
+        <div class="f-design-txt">
+          <p>Design and code by Ansh Gupta</p>
+        </div>
+       </div>
+     </footer>
+
+    <!-- ========== End footer Section ========== -->
+    
+    <script type="module" src="main.js"></script>
+</body>
+</html>

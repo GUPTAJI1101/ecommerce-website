@@ -1,0 +1,72 @@
+[
+    {
+        "id":1,
+        "name": "engine",
+        "category": "spare",
+        "brand": "ExampleBrand",
+        "price": 999.99,
+        "stock": 10,
+        "description": "powerful engine with a turbo inside it. With 300bhp and 215nm tourqe.",
+        "image": "./public/images/engine.png"
+    },
+    {
+        "id":2,
+        "name": "turbo",
+        "category": "spare",
+        "brand": "bentley",
+        "price": 569.29,
+        "stock": 50,
+        "description": "powerful turbo with a booster inside it. With 300bhp and 215nm tourqe.",
+        "image": "./public/images/turbo.png"
+    },
+    {
+        "id":3,
+        "name": "motor",
+        "category": "spare",
+        "brand": "ExampleBrand",
+        "price": 159.69,
+        "stock": 80,
+        "description": "powerful motor with a copper coil inside it. With 300bhp and 215nm tourqe.",
+        "image": "./public/images/motor.png"
+    },
+    {
+        "id":4,
+        "name": "kit",
+        "category": "spare",
+        "brand": "bentley",
+        "price": 59.89,
+        "stock": 185,
+        "description": "original bentley kit with extra seal.powerful turbo with a booster inside it. With 300bhp and 215nm tourqe",
+        "image": "./public/images/kit.png"
+    },
+    {
+        "id":5,
+        "name": "stero",
+        "category": "accessories",
+        "brand": "local",
+        "price": 159.00,
+        "stock": 1885,
+        "description": "original  stero with extra speaker.powerful turbo with a booster inside it. With 300bhp and 215nm tourqe",
+        "image": "./public/images/stero.png"
+    },
+    {
+        "id":6,
+        "name": "original stero",
+        "category": "accessories",
+        "brand": "bentley",
+        "price": 359.89,
+        "stock": 2585,
+        "description": "original bentley stero which install in brand new bentley car.powerful turbo with a booster inside it. With 300bhp and 215nm tourqe",
+        "image": "./public/images/ostero.png"
+    },
+    {
+        "id":7,
+        "name": "steering wheel",
+        "category": "essentials",
+        "brand": "bentley",
+        "price": 8959.89,
+        "stock": 585,
+        "description": "original bentley steering wheel which install in brand new bentley car.powerful turbo with a booster inside it. With 300bhp and 215nm tourqe",
+        "image": "./public/images/sweel.png"
+    }
+]
